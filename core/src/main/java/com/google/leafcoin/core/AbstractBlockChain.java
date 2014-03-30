@@ -85,7 +85,7 @@ public abstract class AbstractBlockChain {
 
 
     protected final int NDIFF_KGW_ENTRY_BLOCK = 18818;
-    protected final int NDIFF_DIGISHIELD_ENTRY_BLOCK = 99500;
+    protected final int NDIFF_DIGISHIELD_ENTRY_BLOCK = 99000;
 
 
     protected final int NDIFF_KGW_ENTRY_BLOCK_TESTNET = 5;
