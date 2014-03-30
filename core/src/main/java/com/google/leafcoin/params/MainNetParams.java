@@ -29,7 +29,9 @@ public class MainNetParams extends NetworkParameters {
     public MainNetParams() {
         super();
         interval = INTERVAL;
+        newInterval = INTERVAL_NEW;
         targetTimespan = TARGET_TIMESPAN;
+        newTargetTimespan = TARGET_TIMESPAN_NEW;
         proofOfWorkLimit = Utils.decodeCompactBits(0x1e0fffffL);
         dumpedPrivateKeyHeader = 223; //This is always addressHeader + 128
         addressHeader = 95;

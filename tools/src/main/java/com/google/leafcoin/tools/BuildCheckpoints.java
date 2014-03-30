@@ -2,6 +2,7 @@ package com.google.leafcoin.tools;
 
 import com.google.leafcoin.core.*;
 import com.google.leafcoin.params.MainNetParams;
+import com.google.leafcoin.params.TestNet2Params;
 import com.google.leafcoin.store.BlockStore;
 import com.google.leafcoin.store.MemoryBlockStore;
 import com.google.leafcoin.utils.BriefLogFormatter;

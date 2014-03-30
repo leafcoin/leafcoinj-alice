@@ -29,22 +29,32 @@ public class TestNet2Params extends NetworkParameters {
     public TestNet2Params() {
         super();
         id = ID_TESTNET;
+        interval = INTERVAL;
+        newInterval = INTERVAL_NEW;
+        targetTimespan = TARGET_TIMESPAN;
+        newTargetTimespan = TARGET_TIMESPAN_NEW;
         packetMagic = 0xbbaaaaaa;
         port = 33813;
         addressHeader = 111;
-        interval = INTERVAL;
-        targetTimespan = TARGET_TIMESPAN;
-        proofOfWorkLimit = Utils.decodeCompactBits(0x1d0fffffL);
+        proofOfWorkLimit = Utils.decodeCompactBits(0x1e0fffffL);
         acceptableAddressCodes = new int[] { 111 };
-        dumpedPrivateKeyHeader = 239;
+        dumpedPrivateKeyHeader = 223;
         genesisBlock.setTime(1388880557L);
         genesisBlock.setDifficultyTarget(0x1e0ffff0L);
         genesisBlock.setNonce(387006691);
         spendableCoinbaseDepth = 100;
-        subsidyDecreaseBlockCount = 210000;
+        subsidyDecreaseBlockCount = 100000;
         String genesisHash = genesisBlock.getHashAsString();
-        checkState(genesisHash.equals("00000007199508e34a9ff81e6ec0c477a4cccff2a4767a8eee39c11db367b008"));
-        dnsSeeds = null;
+        checkState(genesisHash.equals("b78197f0e175697646db1f738edc1ffdcb30588ebe70e7e16026489076577061"));
+        dnsSeeds = new String[] {
+                "seed.leafco.in",
+                "seed2.leafco.in",
+                "seed3.leafco.in",
+                "seed4.leafco.in",
+                "seed5.leafco.in",
+                "seed6.leafco.in",
+                "leafcoin.mercuriusgids.nl"
+        };
     }
 
     private static TestNet2Params instance;
